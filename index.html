@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Резюме для лабораторної роботи №4">
+    <meta name="author" content="Codex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №4</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="card intro">
+        <div class="intro__content">
+          <div>
+            <h1 id="top">Резюме</h1>
+            <p class="lead">
+              Лабораторна робота №4: резюме з інтерактивними можливостями
+              JavaScript.
+            </p>
+          </div>
+
+          <label class="theme-switch">
+            <input id="themeToggle" type="checkbox">
+            <span>Нічний режим</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Про мене</h2>
+        <p class="note" data-role="highlight">
+          Я — студент, який активно розвивається у сфері інформаційних
+          технологій та прагне здобути практичний досвід. Зосереджений на
+          вивченні мов програмування Python і C# для створення ефективних
+          програмних рішень, а також базового стеку HTML+CSS для веб-розробки.
+          Окрім програмування, глибоко вивчаю принципи побудови та
+          функціонування комп'ютерних мереж. Швидко засвоюю нові технології,
+          маю високу мотивацію до навчання та готовий до вирішення цікавих
+          технічних завдань.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Контактна інформація</h2>
+        <ul class="list">
+          <li>Ім'я: Бондачрук Михайло</li>
+          <li>Email: <a href="mailto:bondarchuk.mykhailo@mail.service">bondarchuk.mykhailo@mail.service</a></li>
+          <li>Телефон: <a href="tel:+380501234567">+380 50 123 45 67</a></li>
+          <li>Місто: Київ</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Освіта</h2>
+        <ol class="list">
+          <li>2024 - теперішній час: студент університету</li>
+          <li>2023: базовий курс з HTML</li>
+          <li>2022: ознайомлення з веб-розробкою</li>
+        </ol>
+      </section>
+
+      <section class="card">
+        <h2>Навички</h2>
+        <ul class="list">
+          <li>HTML</li>
+          <li>Робота з тегами та атрибутами</li>
+          <li>Створення простої структури сторінки</li>
+          <li>Використання семантичних секцій</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Досвід</h2>
+        <p data-role="muted">
+          Навчальні проєкти з верстки, створення простих сторінок та практична
+          робота з базовими HTML-елементами.
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>Коментарі попередніх роботодавців</h2>
+        <div id="comments" class="comments" aria-live="polite">
+          Завантаження коментарів...
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer page">
+      <section class="card">
+        <h2>Інформація з localStorage</h2>
+        <dl id="browserInfo" class="browser-info"></dl>
+      </section>
+    </footer>
+
+    <div id="feedbackModal" class="modal" aria-hidden="true">
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="feedbackTitle">
+        <button id="closeModal" class="modal__close" type="button" aria-label="Закрити форму">×</button>
+        <h2 id="feedbackTitle">Форма зворотнього зв'язку</h2>
+        <form class="feedback-form" action="https://formspree.io/f/mnjrzkzk" method="POST">
+          <label>
+            Ім'я
+            <input name="name" type="text" required>
+          </label>
+
+          <label>
+            Email
+            <input name="email" type="email" required>
+          </label>
+
+          <label>
+            Телефон
+            <input name="phone" type="tel" required>
+          </label>
+
+          <label>
+            Повідомлення
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+
+          <button type="submit">Надіслати</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
